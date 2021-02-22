@@ -1,0 +1,13 @@
+.login{
+    margin-left: 30%;
+    margin-right: 30%;
+    /* border: 2px solid red; */
+    background-color: seashell;
+    border-radius: 5%;
+}
+.form-login{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}

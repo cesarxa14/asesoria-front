@@ -1,0 +1,17 @@
+<app-header></app-header>
+<div class="login">
+    <h1 class="text-center mt-5">Iniciar Sesión</h1>
+    <form [formGroup]="loginForm" class="form-login">
+        <mat-form-field appearance="fill">
+            <mat-label>Usuario</mat-label>
+            <input matInput placeholder="Ingresa tu usuario" formControlName="usuario">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Contraseña</mat-label>
+            <input type="password" matInput placeholder="Ingresa tu contraseña" formControlName="password">
+        </mat-form-field>
+        <a class="text-center" href="https://support.google.com/accounts/answer/7682439?hl=es-419">¿Olvidaste tu contraseña?</a>
+        <a class="text-center" href="/register">¿No tienes cuenta?</a>
+        <button mat-raised-button color="primary" (click)="login()">Entrar</button>
+    </form>
+</div>

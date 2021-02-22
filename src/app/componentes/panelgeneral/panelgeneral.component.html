@@ -1,0 +1,31 @@
+<app-header></app-header>
+
+<mat-drawer-container class="example-container" [hasBackdrop]="true">
+    <mat-drawer #drawer [mode]="over">
+        <p>items para navegar</p>
+    </mat-drawer>
+    <mat-drawer-content class="holi">
+        <button mat-raised-button (click)="drawer.toggle()">
+            <span class="material-icons" style="margin-left:5px;" > menu </span>
+        </button>
+        <app-panelgeneral-content></app-panelgeneral-content>
+      <!-- <mat-form-field>
+        <mat-label>Sidenav mode</mat-label>
+        <mat-select #mode value="side">
+          <mat-option value="side">Side</mat-option>
+          <mat-option value="over">Over</mat-option>
+          <mat-option value="push">Push</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Has backdrop</mat-label>
+        <mat-select #hasBackdrop>
+          <mat-option>Unset</mat-option>
+          <mat-option [value]="true">True</mat-option>
+          <mat-option [value]="false">False</mat-option>
+        </mat-select>
+      </mat-form-field> -->
+      
+    </mat-drawer-content>
+  </mat-drawer-container>
+  
